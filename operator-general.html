@@ -132,13 +132,13 @@
                                         Member
                                     </a>
                                 </li>
-                                <li class="mm-active">
+                                <li>
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-users"></i>
                                         Admin
                                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
-                                    <ul class="mm-show">
+                                    <ul>
                                         <li>
                                             <a href="admin-general.html">
                                                 <i class="metismenu-icon">
@@ -146,22 +146,22 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="admin-feedback.html" class="mm-active">
+                                            <a href="admin-feedback.html">
                                                 <i class="metismenu-icon">
                                                 </i>Feedback
                                             </a>
                                         </li>
                                     </ul>
                                 </li>
-                                <li>
+                                <li class="mm-active">
                                     <a href="#">
                                         <i class="metismenu-icon pe-7s-users"></i>
                                         Operator
                                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
-                                    <ul>
+                                    <ul class="mm-show">
                                         <li>
-                                            <a href="operator-general.html">
+                                            <a href="operator-general.html" class="mm-active">
                                                 <i class="metismenu-icon">
                                                 </i>General
                                             </a>
@@ -204,57 +204,17 @@
                    <div class="card mb-3 widget-content bg-premium-dark">
                        <div class="widget-content-wrapper text-white">
                            <div class="widget-content-left">
-                               <div class="widget-heading">Total Feedback</div>
-                           </div>
-                           <div class="widget-content-right">
-                               <div class="widget-numbers text-warning"><span>2</span></div>
+                               <div class="widget-heading">Schedule Booking</div>
                            </div>
                        </div>
                    </div>
                </div>
            </div>
-                      <div class="row">
-                          <div class="col-md-6">
-                              <div class="main-card mb-3 card">
-                                  <div class="card-body">
-                                      <h5 class="card-title">Registration</h5>
-                                      <div class="collapse" id="collapsefeedback1"><p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                                          nesciunt sapiente ea
-                                          proident.</p>
-                                          <p>Donec molestie odio id nisi malesuada, mattis tincidunt velit egestas. Sed non pulvinar risus. Aenean elementum eleifend nunc, pellentesque dapibus arcu hendrerit fringilla. Aliquam in nibh massa. Cras ultricies
-                                              lorem non enim volutpat, a eleifend urna placerat. Fusce id luctus urna. In sed leo tellus. Mauris tristique leo a nisl feugiat, eget vehicula leo venenatis. Quisque magna metus, luctus quis sollicitudin vel,
-                                              vehicula nec ipsum. Donec rutrum commodo lacus ut condimentum. Integer vel turpis purus. Etiam vehicula, nulla non fringilla blandit, massa purus faucibus tellus, a luctus enim orci non augue. Aenean
-                                              ullamcorper nisl urna, non feugiat tortor volutpat in. Vivamus lobortis massa dolor, eget faucibus ipsum varius eget. Pellentesque imperdiet, turpis sed sagittis lobortis, leo elit laoreet arcu, vehicula
-                                              sagittis elit leo id nisi.</p></div>
-                                  </div>
-                                  <div class="card-footer">
-                                      <button type="button" data-toggle="collapse" href="#collapsefeedback1" class="btn btn-primary">Read</button>
-                                      &nbsp;
-                                        <button type="button" data-toggle="modal" data-target="#changemodal" class="btn btn-outline-danger">Change status</button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-6">
-                                      <div class="main-card mb-3 card">
-                                          <div class="card-body">
-                                              <h5 class="card-title">Upload Photo</h5>
-                                              <div class="collapse" id="collapsefeedback2"><p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                                                  nesciunt sapiente ea
-                                                  proident.</p>
-                                                  <p>Donec molestie odio id nisi malesuada, mattis tincidunt velit egestas. Sed non pulvinar risus. Aenean elementum eleifend nunc, pellentesque dapibus arcu hendrerit fringilla. Aliquam in nibh massa. Cras ultricies
-                                                      lorem non enim volutpat, a eleifend urna placerat. Fusce id luctus urna. In sed leo tellus. Mauris tristique leo a nisl feugiat, eget vehicula leo venenatis. Quisque magna metus, luctus quis sollicitudin vel,
-                                                      vehicula nec ipsum. Donec rutrum commodo lacus ut condimentum. Integer vel turpis purus. Etiam vehicula, nulla non fringilla blandit, massa purus faucibus tellus, a luctus enim orci non augue. Aenean
-                                                      ullamcorper nisl urna, non feugiat tortor volutpat in. Vivamus lobortis massa dolor, eget faucibus ipsum varius eget. Pellentesque imperdiet, turpis sed sagittis lobortis, leo elit laoreet arcu, vehicula
-                                                      sagittis elit leo id nisi.</p></div>
-                                          </div>
-                                          <div class="card-footer">
-                                              <button type="button" data-toggle="collapse" href="#collapsefeedback2" class="btn btn-primary">Read</button>
-                                              &nbsp;
-                                                <button type="button" data-toggle="modal" data-target="#changemodal" class="btn btn-outline-danger">Change status</button>
-                                              </div>
-                                            </div>
-                                          </div>
-                              </div>
+           <div class="main-card mb-3 card">
+               <div class="card-body">
+                   <div id='calendar-list'></div>
+               </div>
+           </div>
                           </div>
                       </div>
                     </div>
@@ -299,37 +259,5 @@
                 <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
         </div>
     </div>
-        <!-- Change Modal -->
-            <div id="changemodal" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Details Profile</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="main-card mb-3 card">
-                                <div class="card-body"><h5 class="card-title">Change Status Feedback</h5>
-                                    <div class="position-relative form-group">
-                                        <div>
-                                            <div class="custom-radio custom-control"><input type="radio" id="completedfeedback" name="customRadio" class="custom-control-input">
-                                              <label class="custom-control-label" for="completedfeedback">Completed</label></div>
-                                            <div class="custom-radio custom-control"><input type="radio" id="pendingfeedback" name="customRadio" class="custom-control-input">
-                                              <label class="custom-control-label" for="pendingfeedback">Pending
-                                                </label></div>
-                                        </div>
-                                    </div>
-                                </div>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-success">Change</button>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
 <script type="text/javascript" src="./assets/scripts/main.js"></script></body>
 </html>
