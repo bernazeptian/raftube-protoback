@@ -120,14 +120,14 @@
                             <ul class="vertical-nav-menu">
                                 <li class="app-sidebar__heading">Dashboards</li>
                                 <li>
-                                    <a href="index.html" class="mm-active">
+                                    <a href="index.html">
                                         <i class="metismenu-icon pe-7s-smile"></i>
                                         General
                                     </a>
                                 </li>
                                 <li class="app-sidebar__heading">Accounts</li>
                                 <li>
-                                    <a href="member.html">
+                                    <a href="member.html" class="mm-active">
                                         <i class="metismenu-icon pe-7s-users"></i>
                                         Member
                                     </a>
@@ -200,33 +200,7 @@
                 </div>    <div class="app-main__outer">
                     <div class="app-main__inner">
                                    <div class="row">
-                            <div class="col-md-6 col-xl-4">
-                                <div class="card mb-3 widget-content bg-midnight-bloom">
-                                    <div class="widget-content-wrapper text-white">
-                                        <div class="widget-content-left">
-                                            <div class="widget-heading">Total Orders</div>
-                                            <div class="widget-subheading">/year</div>
-                                        </div>
-                                        <div class="widget-content-right">
-                                            <div class="widget-numbers text-white"><span>1896</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4">
-                                <div class="card mb-3 widget-content bg-arielle-smile">
-                                    <div class="widget-content-wrapper text-white">
-                                        <div class="widget-content-left">
-                                            <div class="widget-heading">Feedback</div>
-                                            <div class="widget-subheading">Total Feedback Website</div>
-                                        </div>
-                                        <div class="widget-content-right">
-                                            <div class="widget-numbers text-white"><span>1962</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4">
+                            <div class="justify-content-center col-md-6 col-xl-12">
                                 <div class="card mb-3 widget-content bg-grow-early">
                                     <div class="widget-content-wrapper text-white">
                                         <div class="widget-content-left">
@@ -245,30 +219,24 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="main-card mb-3 card">
-                                    <div class="card-header">List Feedback
-                                        <div class="btn-actions-pane-right">
-                                            <div role="group" class="btn-group-sm btn-group">
-                                              <button class="active btn btn-focus">All</button>
-                                                <button class="btn btn-focus">Pending</button>
-                                                <button class="btn btn-focus">Completed</button>
-                                            </div>
-                                        </div>
+                                    <div class="card-header">List Member
                                     </div>
                                     <div class="table-responsive">
                                         <table class="align-middle mb-0 table table-borderless table-striped table-hover">
                                             <thead>
                                             <tr>
-                                                <th class="text-center">#</th>
+                                                <th class="text-center">ID</th>
                                                 <th>Name</th>
                                                 <th class="text-center">E-Mail</th>
-                                                <th class="text-center">Title</th>
-                                                <th class="text-center">Status</th>
-                                                <th class="text-center">Details</th>
+                                                <th class="text-center">Username</th>
+                                                <th class="text-center">Date of Birth</th>
+                                                <th class="text-center">Gender</th>
+                                                <th class="text-center">Action</th>
                                             </tr>
                                             </thead>
                                             <tbody>
                                             <tr>
-                                                <td class="text-center text-muted">#345</td>
+                                                <td class="text-center text-muted">1</td>
                                                 <td>
                                                     <div class="widget-content p-0">
                                                         <div class="widget-content-wrapper">
@@ -284,16 +252,18 @@
                                                     </div>
                                                 </td>
                                                 <td class="text-center">johndoe@gmail.com</td>
-                                                <td class="text-center">Registration</td>
+                                                <td class="text-center">johndoe12</td>
+                                                <td class="text-center">01-07-1980</td>
                                                 <td class="text-center">
-                                                    <div class="badge badge-warning">Pending</div>
+                                                    Men
                                                 </td>
                                                 <td class="text-center">
-                                                    <button type="button" id="details-modal" data-toggle="modal" data-target=".bd-example-modal-lg" class="btn btn-primary btn-sm">Details</button>
+                                                    <button type="button" data-toggle="modal" data-target="#detailsmodal" class="btn btn-primary btn-sm">Details</button>
+                                                    <button type="button" data-toggle="modal" data-target="#changemodal" class="btn btn-outline-danger btn-sm">Change</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="text-center text-muted">#347</td>
+                                                <td class="text-center text-muted">2</td>
                                                 <td>
                                                     <div class="widget-content p-0">
                                                         <div class="widget-content-wrapper">
@@ -309,16 +279,18 @@
                                                     </div>
                                                 </td>
                                                 <td class="text-center">rubentillman@gmail.com</td>
-                                                <td class="text-center">Upload Photo</td>
+                                                <td class="text-center">rubenkuy</td>
+                                                <td class="text-center">09-07-1971</td>
                                                 <td class="text-center">
-                                                    <div class="badge badge-success">Completed</div>
+                                                    Women
                                                 </td>
                                                 <td class="text-center">
-                                                      <button type="button" id="details-modal" data-toggle="modal" data-target=".bd-example-modal-lg" class="btn btn-primary btn-sm">Details</button>
+                                                      <button type="button" data-toggle="modal" data-target="#detailsmodal" class="btn btn-primary btn-sm">Details</button>
+                                                      <button type="button" data-toggle="modal" data-target="#changemodal" class="btn btn-outline-danger btn-sm">Change</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="text-center text-muted">#321</td>
+                                                <td class="text-center text-muted">3</td>
                                                 <td>
                                                     <div class="widget-content p-0">
                                                         <div class="widget-content-wrapper">
@@ -334,16 +306,18 @@
                                                     </div>
                                                 </td>
                                                 <td class="text-center">elliothuber@gmail.com</td>
-                                                <td class="text-center">Can't Scroll</td>
+                                                <td class="text-center">elliotanjay</td>
+                                                <td class="text-center">06-12-1986</td>
                                                 <td class="text-center">
-                                                    <div class="badge badge-warning">Pending</div>
+                                                    Men
                                                 </td>
                                                 <td class="text-center">
-                                                      <button type="button" id="details-modal" data-toggle="modal" data-target=".bd-example-modal-lg" class="btn btn-primary btn-sm">Details</button>
+                                                      <button type="button" data-toggle="modal" data-target="#detailsmodal" class="btn btn-primary btn-sm">Details</button>
+                                                      <button type="button" data-toggle="modal" data-target="#changemodal" class="btn btn-outline-danger btn-sm">Change</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="text-center text-muted">#55</td>
+                                                <td class="text-center text-muted">4</td>
                                                 <td>
                                                     <div class="widget-content p-0">
                                                         <div class="widget-content-wrapper">
@@ -358,16 +332,35 @@
                                                     </div>
                                                 </td>
                                                 <td class="text-center">vinniewagstaff@gmail.com</td>
-                                                <td class="text-center">Too Much Ads</td>
+                                                <td class="text-center">vinniemantul</td>
+                                                <td class="text-center">04-02-1979</td>
                                                 <td class="text-center">
-                                                    <div class="badge badge-success">Completed</div>
+                                                    Women
                                                 </td>
                                                 <td class="text-center">
-                                                      <button type="button" id="details-modal" data-toggle="modal" data-target=".bd-example-modal-lg" class="btn btn-primary btn-sm">Details</button>
+                                                      <button type="button" data-toggle="modal" data-target="#detailsmodal" class="btn btn-primary btn-sm">Details</button>
+                                                      <button type="button" data-toggle="modal" data-target="#changemodal" class="btn btn-outline-danger btn-sm">Change</button>
                                                 </td>
                                             </tr>
                                             </tbody>
                                         </table>
+                                        <div class="card-header">
+                                            <div class="btn-actions-pane-right">
+                                                <div role="group" class="btn-group-sm btn-group">
+                                                  <nav class="" aria-label="Page navigation example">
+                                                      <ul class="pagination">
+                                                          <li class="page-item"><a href="javascript:void(0);" class="page-link" aria-label="Previous"><span aria-hidden="true">«</span><span class="sr-only">Previous</span></a></li>
+                                                          <li class="page-item active"><a href="javascript:void(0);" class="page-link">1</a></li>
+                                                          <li class="page-item"><a href="javascript:void(0);" class="page-link">2</a></li>
+                                                          <li class="page-item"><a href="javascript:void(0);" class="page-link">3</a></li>
+                                                          <li class="page-item"><a href="javascript:void(0);" class="page-link">4</a></li>
+                                                          <li class="page-item"><a href="javascript:void(0);" class="page-link">5</a></li>
+                                                          <li class="page-item"><a href="javascript:void(0);" class="page-link" aria-label="Next"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
+                                                      </ul>
+                                                  </nav>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -414,18 +407,37 @@
         </div>
     </div>
     <!-- Details Modal -->
-        <div class="modal fade bd-example-modal-lg" id="details-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div id="detailsmodal" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Title</h5>
+                        <h5 class="modal-title" id="exampleModalLongTitle">Details Profile</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                      <div class="main-card mb-3 card">
+                          <div class="card-body"><h5 class="card-title">John Doe</h5>
+                              <div>
+                                  <div class="input-group">
+                                      <div class="input-group-prepend"><span class="input-group-text">Username</span></div>
+                                      <input placeholder="johndoe12" type="text" class="form-control" readonly></div>
+                                  <br>
+                                  <div class="input-group">
+                                      <div class="input-group-prepend"><span class="input-group-text">E-Mail</span></div>
+                                      <input placeholder="johndoe@gmail.com" type="text" class="form-control" readonly></div>
+                                  <br>
+                                  <div class="input-group">
+                                      <div class="input-group-prepend"><span class="input-group-text">Date of Birth</span></div>
+                                      <input placeholder="01-07-1980" type="text" class="form-control" readonly></div>
+                                  <br>
+                                  <div class="input-group">
+                                      <div class="input-group-prepend"><span class="input-group-text">Gender</span></div>
+                                      <input placeholder="Men" type="text" class="form-control" readonly></div>
+                              </div>
+                          </div>
+                      </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -433,5 +445,45 @@
                 </div>
             </div>
         </div>
+        <!-- Change Modal -->
+            <div id="changemodal" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Details Profile</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="main-card mb-3 card">
+                              <div class="card-body"><h5 class="card-title">John Doe</h5>
+                                  <div>
+                                      <div class="input-group">
+                                          <div class="input-group-prepend"><span class="input-group-text">Username</span></div>
+                                          <input type="text" class="form-control" value="johndoe12"></div>
+                                      <br>
+                                      <div class="input-group">
+                                          <div class="input-group-prepend"><span class="input-group-text">E-Mail</span></div>
+                                          <input value="johndoe@gmail.com" type="text" class="form-control"></div>
+                                      <br>
+                                      <div class="input-group">
+                                          <div class="input-group-prepend"><span class="input-group-text">Date of Birth</span></div>
+                                          <input value="01-07-1980" type="text" class="form-control"></div>
+                                      <br>
+                                      <div class="input-group">
+                                          <div class="input-group-prepend"><span class="input-group-text">Gender</span></div>
+                                          <input value="Men" type="text" class="form-control"></div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-success">Change</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 <script type="text/javascript" src="./assets/scripts/main.js"></script></body>
 </html>
